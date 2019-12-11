@@ -205,20 +205,22 @@ aside img {
   flex-direction: column;
 }
 .details {
+  width: 70%;
   height: auto;
   color: #003a69;
   padding: 25px;
   display: flex;
   flex-direction: column;
 }
-@media screen and (min-width: 500px) {
-  .details {
-    width: 70%;
-  }
+.details h1 {
+  display: block;
 }
 @media screen and (max-width: 500px) {
   .details {
     width: 100%;
+  }
+  .details h1 {
+    display: none;
   }
 }
 .details h3 {
@@ -228,6 +230,7 @@ aside img {
   text-transform: uppercase;
 }
 .contact-info {
+  font-size: 1.6rem;
   text-align: center;
   margin-bottom: 40px;
 }
