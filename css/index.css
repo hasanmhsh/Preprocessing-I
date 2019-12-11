@@ -143,64 +143,91 @@ h3,
 h4 {
   font-family: 'Lilita One', cursive;
 }
+h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  text-align: center;
+}
 p {
   font-family: 'Roboto Condensed', sans-serif;
 }
 .contents {
   display: flex;
-  align-items: stretch;
   margin: 0 auto;
-  height: 100%;
+  height: auto;
+  width: 100%;
   max-width: 900px;
   background: #c6e5e9;
 }
-.contents aside {
+@media screen and (max-width: 500px) {
+  .contents {
+    flex-direction: column;
+  }
+}
+aside {
+  display: flex;
+  flex-direction: column;
+  height: auto;
   background: #003a69;
-  width: 250px;
-}
-.contents aside img {
-  width: 250px;
-}
-.contents .paragraph-container-aside {
+  width: 30%;
   color: #c6e5e9;
+}
+aside h1 {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  aside {
+    width: 100%;
+  }
+  aside h1 {
+    display: block;
+  }
+}
+aside img {
+  width: 100%;
+}
+.paragraph-container-aside {
   padding: 10px;
 }
-.contents .paragraph-container-aside h3 {
+.paragraph-container-aside h3 {
   font-size: 1.7rem;
   margin-bottom: 13px;
 }
-.contents .paragraph-container-aside p {
+.paragraph-container-aside p {
   margin-bottom: 30px;
 }
-.contents .dark-star {
+.dark-star {
   color: #50777c;
 }
-.contents .flex-center {
+.flex-center {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
 }
-.contents .details {
+.details {
+  height: auto;
   color: #003a69;
   padding: 25px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
 }
-.contents .details h1 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  margin-bottom: 20px;
+@media screen and (min-width: 500px) {
+  .details {
+    width: 70%;
+  }
 }
-.contents .details h3 {
+@media screen and (max-width: 500px) {
+  .details {
+    width: 100%;
+  }
+}
+.details h3 {
   margin-top: 50px;
   margin-bottom: 20px;
   font-size: 2rem;
   text-transform: uppercase;
 }
-.contents .contact-info {
+.contact-info {
   text-align: center;
   margin-bottom: 40px;
 }
