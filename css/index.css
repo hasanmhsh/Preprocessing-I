@@ -134,3 +134,73 @@ html,
 body {
   height: 100%;
 }
+:root {
+  font-size: 16px;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Lilita One', cursive;
+}
+p {
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.contents {
+  display: flex;
+  align-items: stretch;
+  margin: 0 auto;
+  height: 100%;
+  max-width: 900px;
+  background: #c6e5e9;
+}
+.contents aside {
+  background: #003a69;
+  width: 250px;
+}
+.contents aside img {
+  width: 250px;
+}
+.contents .paragraph-container-aside {
+  color: #c6e5e9;
+  padding: 10px;
+}
+.contents .paragraph-container-aside h3 {
+  font-size: 1.7rem;
+  margin-bottom: 13px;
+}
+.contents .paragraph-container-aside p {
+  margin-bottom: 30px;
+}
+.contents .dark-star {
+  color: #50777c;
+}
+.contents .flex-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contents .details {
+  color: #003a69;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.contents .details h1 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.contents .details h3 {
+  margin-top: 50px;
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.contents .contact-info {
+  text-align: center;
+  margin-bottom: 40px;
+}
